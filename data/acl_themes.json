@@ -1,0 +1,77 @@
+{
+ "acl2024": {
+  "n": 864,
+  "shares": {
+   "LLMs / foundation models": 47.7,
+   "Efficiency / systems": 9.4,
+   "Vision / multimodal": 11.9,
+   "Safety / alignment / privacy": 8.0,
+   "Evaluation / benchmarks": 14.1,
+   "Speech / audio / music": 4.2,
+   "Reasoning / test-time compute": 7.8,
+   "Graph / geometric learning": 3.6,
+   "Retrieval / RAG / knowledge": 8.9,
+   "Continual / transfer / meta learning": 2.7,
+   "Learning theory / optimization": 2.2,
+   "Agents (tool use, computer use, multi-agent)": 5.0,
+   "Robotics / embodied": 1.7,
+   "Applications to science": 1.0,
+   "World models / model-based RL": 1.5,
+   "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 1.4,
+   "Interpretability": 2.2,
+   "Diffusion / generative models": 1.2,
+   "Spatial / 3D / graphics": 0.1,
+   "Time series / dynamical systems": 0.1
+  }
+ },
+ "acl2025": {
+  "n": 1602,
+  "shares": {
+   "Agents (tool use, computer use, multi-agent)": 7.9,
+   "Evaluation / benchmarks": 15.0,
+   "World models / model-based RL": 1.6,
+   "Graph / geometric learning": 3.6,
+   "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 2.9,
+   "LLMs / foundation models": 46.7,
+   "Safety / alignment / privacy": 9.2,
+   "Efficiency / systems": 11.5,
+   "Interpretability": 2.4,
+   "Reasoning / test-time compute": 9.3,
+   "Learning theory / optimization": 4.6,
+   "Vision / multimodal": 12.7,
+   "Applications to science": 2.0,
+   "Retrieval / RAG / knowledge": 11.9,
+   "Diffusion / generative models": 1.4,
+   "Speech / audio / music": 3.2,
+   "Continual / transfer / meta learning": 1.9,
+   "Robotics / embodied": 1.9,
+   "Time series / dynamical systems": 0.4,
+   "Spatial / 3D / graphics": 0.1
+  }
+ },
+ "acl2026": {
+  "n": 2222,
+  "shares": {
+   "Agents (tool use, computer use, multi-agent)": 13.9,
+   "Reasoning / test-time compute": 18.4,
+   "LLMs / foundation models": 41.4,
+   "Interpretability": 3.3,
+   "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 8.1,
+   "Safety / alignment / privacy": 9.2,
+   "Efficiency / systems": 12.6,
+   "Evaluation / benchmarks": 14.9,
+   "Retrieval / RAG / knowledge": 11.8,
+   "Applications to science": 2.4,
+   "Vision / multimodal": 14.3,
+   "Graph / geometric learning": 4.5,
+   "Spatial / 3D / graphics": 0.8,
+   "Continual / transfer / meta learning": 1.6,
+   "Speech / audio / music": 3.7,
+   "Diffusion / generative models": 2.3,
+   "Time series / dynamical systems": 0.5,
+   "Robotics / embodied": 2.9,
+   "Learning theory / optimization": 4.3,
+   "World models / model-based RL": 2.6
+  }
+ }
+}
