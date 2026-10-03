@@ -1,0 +1,408 @@
+{
+ "baseline": {
+  "y1": 130345,
+  "y0": 102553
+ },
+ "topics": {
+  "large language model": {
+   "y1": 30486,
+   "y0": 26446
+  },
+  "mixture of experts": {
+   "y1": 1813,
+   "y0": 1011
+  },
+  "state space model": {
+   "y1": 834,
+   "y0": 756
+  },
+  "linear attention": {
+   "y1": 294,
+   "y0": 159
+  },
+  "efficient attention": {
+   "y1": 66,
+   "y0": 65
+  },
+  "long context": {
+   "y1": 1601,
+   "y0": 866
+  },
+  "retrieval-augmented generation": {
+   "y1": 2693,
+   "y0": 2353
+  },
+  "knowledge graph": {
+   "y1": 1619,
+   "y0": 1306
+  },
+  "reinforcement learning from human feedback": {
+   "y1": 249,
+   "y0": 326
+  },
+  "direct preference optimization": {
+   "y1": 493,
+   "y0": 539
+  },
+  "verifiable reward": {
+   "y1": 1023,
+   "y0": 264
+  },
+  "group relative policy optimization": {
+   "y1": 957,
+   "y0": 352
+  },
+  "process reward model": {
+   "y1": 172,
+   "y0": 134
+  },
+  "on-policy distillation": {
+   "y1": 510,
+   "y0": 29
+  },
+  "test-time scaling": {
+   "y1": 535,
+   "y0": 307
+  },
+  "chain-of-thought": {
+   "y1": 2811,
+   "y0": 2146
+  },
+  "mathematical reasoning": {
+   "y1": 1149,
+   "y0": 693
+  },
+  "theorem proving": {
+   "y1": 253,
+   "y0": 158
+  },
+  "code generation": {
+   "y1": 1869,
+   "y0": 1369
+  },
+  "software engineering agent": {
+   "y1": 64,
+   "y0": 16
+  },
+  "tool use": {
+   "y1": 1791,
+   "y0": 479
+  },
+  "LLM agent": {
+   "y1": 2927,
+   "y0": 899
+  },
+  "multi-agent": {
+   "y1": 6112,
+   "y0": 3307
+  },
+  "computer use agent": {
+   "y1": 191,
+   "y0": 41
+  },
+  "GUI agent": {
+   "y1": 278,
+   "y0": 133
+  },
+  "web agent": {
+   "y1": 186,
+   "y0": 80
+  },
+  "agent memory": {
+   "y1": 361,
+   "y0": 29
+  },
+  "context engineering": {
+   "y1": 102,
+   "y0": 17
+  },
+  "model context protocol": {
+   "y1": 441,
+   "y0": 131
+  },
+  "agent benchmark": {
+   "y1": 425,
+   "y0": 70
+  },
+  "recursive self-improvement": {
+   "y1": 91,
+   "y0": 8
+  },
+  "self-evolving agent": {
+   "y1": 129,
+   "y0": 11
+  },
+  "automated research": {
+   "y1": 48,
+   "y0": 13
+  },
+  "world model": {
+   "y1": 2154,
+   "y0": 584
+  },
+  "video generation": {
+   "y1": 1659,
+   "y0": 1015
+  },
+  "video understanding": {
+   "y1": 783,
+   "y0": 520
+  },
+  "image generation": {
+   "y1": 1807,
+   "y0": 2060
+  },
+  "diffusion model": {
+   "y1": 5092,
+   "y0": 5702
+  },
+  "flow matching": {
+   "y1": 1962,
+   "y0": 629
+  },
+  "diffusion language model": {
+   "y1": 418,
+   "y0": 67
+  },
+  "vision-language model": {
+   "y1": 5940,
+   "y0": 3671
+  },
+  "3D generation": {
+   "y1": 313,
+   "y0": 293
+  },
+  "gaussian splatting": {
+   "y1": 1497,
+   "y0": 1325
+  },
+  "speech recognition": {
+   "y1": 865,
+   "y0": 831
+  },
+  "text to speech": {
+   "y1": 531,
+   "y0": 487
+  },
+  "music generation": {
+   "y1": 145,
+   "y0": 146
+  },
+  "embodied AI": {
+   "y1": 497,
+   "y0": 287
+  },
+  "vision-language-action": {
+   "y1": 1747,
+   "y0": 300
+  },
+  "robot learning": {
+   "y1": 405,
+   "y0": 214
+  },
+  "autonomous driving": {
+   "y1": 1923,
+   "y0": 1958
+  },
+  "mechanistic interpretability": {
+   "y1": 480,
+   "y0": 239
+  },
+  "sparse autoencoder": {
+   "y1": 541,
+   "y0": 289
+  },
+  "alignment": {
+   "y1": 29860,
+   "y0": 19492
+  },
+  "jailbreak": {
+   "y1": 845,
+   "y0": 650
+  },
+  "red teaming": {
+   "y1": 373,
+   "y0": 212
+  },
+  "AI safety": {
+   "y1": 295,
+   "y0": 237
+  },
+  "hallucination": {
+   "y1": 3775,
+   "y0": 2397
+  },
+  "machine unlearning": {
+   "y1": 333,
+   "y0": 246
+  },
+  "watermarking": {
+   "y1": 564,
+   "y0": 432
+  },
+  "differential privacy": {
+   "y1": 765,
+   "y0": 735
+  },
+  "federated learning": {
+   "y1": 1618,
+   "y0": 1991
+  },
+  "fairness": {
+   "y1": 3474,
+   "y0": 3025
+  },
+  "evaluation benchmark": {
+   "y1": 501,
+   "y0": 485
+  },
+  "AI for science": {
+   "y1": 114,
+   "y0": 49
+  },
+  "protein structure": {
+   "y1": 143,
+   "y0": 180
+  },
+  "drug discovery": {
+   "y1": 408,
+   "y0": 474
+  },
+  "materials discovery": {
+   "y1": 243,
+   "y0": 201
+  },
+  "weather forecasting": {
+   "y1": 266,
+   "y0": 257
+  },
+  "medical imaging": {
+   "y1": 1955,
+   "y0": 2166
+  },
+  "clinical NLP": {
+   "y1": 41,
+   "y0": 19
+  },
+  "graph neural network": {
+   "y1": 2198,
+   "y0": 2316
+  },
+  "time series forecasting": {
+   "y1": 656,
+   "y0": 600
+  },
+  "causal inference": {
+   "y1": 639,
+   "y0": 598
+  },
+  "recommender system": {
+   "y1": 1234,
+   "y0": 1407
+  },
+  "tabular data": {
+   "y1": 533,
+   "y0": 502
+  },
+  "continual learning": {
+   "y1": 1002,
+   "y0": 872
+  },
+  "catastrophic forgetting": {
+   "y1": 989,
+   "y0": 776
+  },
+  "meta learning": {
+   "y1": 446,
+   "y0": 521
+  },
+  "in-context learning": {
+   "y1": 1068,
+   "y0": 1196
+  },
+  "synthetic data": {
+   "y1": 2335,
+   "y0": 2179
+  },
+  "data curation": {
+   "y1": 434,
+   "y0": 270
+  },
+  "quantization": {
+   "y1": 4987,
+   "y0": 3395
+  },
+  "knowledge distillation": {
+   "y1": 1064,
+   "y0": 1059
+  },
+  "speculative decoding": {
+   "y1": 462,
+   "y0": 209
+  },
+  "KV cache": {
+   "y1": 1362,
+   "y0": 474
+  },
+  "LLM serving": {
+   "y1": 409,
+   "y0": 160
+  },
+  "LoRA": {
+   "y1": 2360,
+   "y0": 1391
+  },
+  "optimization algorithm": {
+   "y1": 1242,
+   "y0": 1362
+  },
+  "generalization theory": {
+   "y1": 275,
+   "y0": 211
+  },
+  "expressivity transformer": {
+   "y1": 7,
+   "y0": 4
+  },
+  "exploration reinforcement learning": {
+   "y1": 17,
+   "y0": 10
+  },
+  "offline reinforcement learning": {
+   "y1": 233,
+   "y0": 217
+  },
+  "multi-agent reinforcement learning": {
+   "y1": 545,
+   "y0": 492
+  },
+  "imitation learning": {
+   "y1": 817,
+   "y0": 713
+  },
+  "neural rendering": {
+   "y1": 114,
+   "y0": 119
+  },
+  "point cloud": {
+   "y1": 1993,
+   "y0": 1881
+  },
+  "neuroscience": {
+   "y1": 617,
+   "y0": 661
+  },
+  "education LLM": {
+   "y1": 8,
+   "y0": 4
+  },
+  "personalization": {
+   "y1": 6322,
+   "y0": 5708
+  },
+  "long video": {
+   "y1": 524,
+   "y0": 323
+  }
+ }
+}

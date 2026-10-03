@@ -1,0 +1,179 @@
+{
+  "windows": {
+    "last6": [
+      "2026-04-01",
+      "2026-09-30"
+    ],
+    "prior6": [
+      "2025-10-01",
+      "2026-03-31"
+    ],
+    "last3": [
+      "2026-07-01",
+      "2026-09-30"
+    ]
+  },
+  "baseline": {
+    "last6": {
+      "cs": 525741
+    },
+    "prior6": {
+      "cs": 588740
+    },
+    "last3": {
+      "cs": 260786
+    }
+  },
+  "topics": {
+    "recursive self-improvement": {
+      "last6": 705,
+      "prior6": 415,
+      "last3": 495
+    },
+    "self-improvement": {
+      "last6": 24190,
+      "prior6": 24231,
+      "last3": 11987
+    },
+    "self-evolving": {
+      "last6": 13929,
+      "prior6": 12500,
+      "last3": 7578
+    },
+    "agent harness": {
+      "last6": 3951,
+      "prior6": 1521,
+      "last3": 2492
+    },
+    "scaffold": {
+      "last6": 30869,
+      "prior6": 26413,
+      "last3": 14942
+    },
+    "long context": {
+      "last6": 50517,
+      "prior6": 57601,
+      "last3": 22849
+    },
+    "context window": {
+      "last6": 8975,
+      "prior6": 6972,
+      "last3": 4484
+    },
+    "long-horizon": {
+      "last6": 14492,
+      "prior6": 13333,
+      "last3": 7635
+    },
+    "agentic reinforcement learning": {
+      "last6": 10513,
+      "prior6": 12064,
+      "last3": 5358
+    },
+    "multi-turn reinforcement learning": {
+      "last6": 523,
+      "prior6": 446,
+      "last3": 218
+    },
+    "multi-turn": {
+      "last6": 8370,
+      "prior6": 7356,
+      "last3": 4042
+    },
+    "tool use": {
+      "last6": 260608,
+      "prior6": 315489,
+      "last3": 118283
+    },
+    "verifiable reward": {
+      "last6": 817,
+      "prior6": 617,
+      "last3": 371
+    },
+    "test-time scaling": {
+      "last6": 35835,
+      "prior6": 36427,
+      "last3": 17331
+    },
+    "test-time compute": {
+      "last6": 9891,
+      "prior6": 8056,
+      "last3": 5334
+    },
+    "reasoning model": {
+      "last6": 46096,
+      "prior6": 45888,
+      "last3": 21551
+    },
+    "chain-of-thought": {
+      "last6": 4787,
+      "prior6": 5345,
+      "last3": 1983
+    },
+    "GRPO": {
+      "last6": 1984,
+      "prior6": 1446,
+      "last3": 868
+    },
+    "on-policy distillation": {
+      "last6": 1301,
+      "prior6": 548,
+      "last3": 780
+    },
+    "process reward model": {
+      "last6": 3444,
+      "prior6": 3872,
+      "last3": 1590
+    },
+    "language model agent": {
+      "last6": 21419,
+      "prior6": 18289,
+      "last3": 10322
+    },
+    "multi-agent": {
+      "last6": 38688,
+      "prior6": 34874,
+      "last3": 17919
+    },
+    "computer use agent": {
+      "last6": 1641,
+      "prior6": 1447,
+      "last3": 815
+    },
+    "GUI agent": {
+      "last6": 590,
+      "prior6": 447,
+      "last3": 278
+    },
+    "coding agent": {
+      "last6": 19510,
+      "prior6": 10459,
+      "last3": 10810
+    },
+    "agent memory": {
+      "last6": 11901,
+      "prior6": 7612,
+      "last3": 6065
+    },
+    "context engineering": {
+      "last6": 14037,
+      "prior6": 14875,
+      "last3": 6527
+    },
+    "model context protocol": {
+      "last6": 11068,
+      "prior6": 8771,
+      "last3": 5756
+    },
+    "agent benchmark": {
+      "last6": 15685,
+      "prior6": 10308,
+      "last3": 8070
+    },
+    "mixture of experts": {
+      "last6": 3893,
+      "prior6": null,
+      "last3": null
+    }
+  }
+}

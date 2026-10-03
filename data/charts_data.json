@@ -1,0 +1,805 @@
+{
+ "conf_yoy": {
+  "iclr": {
+   "y1": "2025",
+   "y2": "2026",
+   "accepted": {
+    "y1": 3703,
+    "y2": 5343
+   },
+   "themes": {
+    "LLMs / foundation models": {
+     "y1": 32.6,
+     "y2": 36.2
+    },
+    "Vision / multimodal": {
+     "y1": 21.6,
+     "y2": 23.7
+    },
+    "Efficiency / systems": {
+     "y1": 12.3,
+     "y2": 13.2
+    },
+    "Diffusion / generative models": {
+     "y1": 14.1,
+     "y2": 13.0
+    },
+    "Reinforcement learning (RL/RLVR/GRPO/RLHF)": {
+     "y1": 9.4,
+     "y2": 12.8
+    },
+    "Reasoning / test-time compute": {
+     "y1": 5.0,
+     "y2": 12.0
+    },
+    "Safety / alignment / privacy": {
+     "y1": 10.9,
+     "y2": 10.5
+    },
+    "Evaluation / benchmarks": {
+     "y1": 9.2,
+     "y2": 9.8
+    },
+    "Learning theory / optimization": {
+     "y1": 11.8,
+     "y2": 9.8
+    },
+    "Agents (tool use, computer use, multi-agent)": {
+     "y1": 5.1,
+     "y2": 8.3
+    },
+    "Graph / geometric learning": {
+     "y1": 7.2,
+     "y2": 5.6
+    },
+    "Robotics / embodied": {
+     "y1": 4.6,
+     "y2": 5.3
+    },
+    "Applications to science": {
+     "y1": 5.6,
+     "y2": 5.2
+    },
+    "Retrieval / RAG / knowledge": {
+     "y1": 4.8,
+     "y2": 5.0
+    }
+   }
+  },
+  "nips": {
+   "y1": "2024",
+   "y2": "2025",
+   "accepted": {
+    "y1": 4037,
+    "y2": 5639
+   },
+   "themes": {
+    "LLMs / foundation models": {
+     "y1": 22.3,
+     "y2": 26.0
+    },
+    "Vision / multimodal": {
+     "y1": 22.3,
+     "y2": 22.2
+    },
+    "Learning theory / optimization": {
+     "y1": 15.2,
+     "y2": 12.5
+    },
+    "Diffusion / generative models": {
+     "y1": 12.9,
+     "y2": 12.0
+    },
+    "Efficiency / systems": {
+     "y1": 11.5,
+     "y2": 10.7
+    },
+    "Reinforcement learning (RL/RLVR/GRPO/RLHF)": {
+     "y1": 10.3,
+     "y2": 10.4
+    },
+    "Safety / alignment / privacy": {
+     "y1": 10.5,
+     "y2": 9.2
+    },
+    "Reasoning / test-time compute": {
+     "y1": 2.8,
+     "y2": 7.6
+    },
+    "Graph / geometric learning": {
+     "y1": 8.1,
+     "y2": 6.9
+    },
+    "Agents (tool use, computer use, multi-agent)": {
+     "y1": 3.4,
+     "y2": 5.1
+    },
+    "Applications to science": {
+     "y1": 4.9,
+     "y2": 4.9
+    },
+    "Spatial / 3D / graphics": {
+     "y1": 5.7,
+     "y2": 4.8
+    },
+    "Robotics / embodied": {
+     "y1": 3.2,
+     "y2": 4.5
+    },
+    "Retrieval / RAG / knowledge": {
+     "y1": 4.1,
+     "y2": 4.2
+    }
+   }
+  }
+ },
+ "iclr_themes": {
+  "LLMs / foundation models": {
+   "iclr2025": 32.6,
+   "iclr2026": 36.2
+  },
+  "Vision / multimodal": {
+   "iclr2025": 21.6,
+   "iclr2026": 23.7
+  },
+  "Efficiency / systems": {
+   "iclr2025": 12.3,
+   "iclr2026": 13.2
+  },
+  "Diffusion / generative models": {
+   "iclr2025": 14.1,
+   "iclr2026": 13.0
+  },
+  "Reinforcement learning (RL/RLVR/GRPO/RLHF)": {
+   "iclr2025": 9.4,
+   "iclr2026": 12.8
+  },
+  "Reasoning / test-time compute": {
+   "iclr2025": 5.0,
+   "iclr2026": 12.0
+  },
+  "Safety / alignment / privacy": {
+   "iclr2025": 10.9,
+   "iclr2026": 10.5
+  },
+  "Evaluation / benchmarks": {
+   "iclr2025": 9.2,
+   "iclr2026": 9.8
+  },
+  "Learning theory / optimization": {
+   "iclr2025": 11.8,
+   "iclr2026": 9.8
+  },
+  "Agents (tool use, computer use, multi-agent)": {
+   "iclr2025": 5.1,
+   "iclr2026": 8.3
+  },
+  "Graph / geometric learning": {
+   "iclr2025": 7.2,
+   "iclr2026": 5.6
+  },
+  "Robotics / embodied": {
+   "iclr2025": 4.6,
+   "iclr2026": 5.3
+  },
+  "Applications to science": {
+   "iclr2025": 5.6,
+   "iclr2026": 5.2
+  },
+  "Retrieval / RAG / knowledge": {
+   "iclr2025": 4.8,
+   "iclr2026": 5.0
+  }
+ },
+ "conf_stats": {
+  "icml_2024": {
+   "records": 2610,
+   "accepted": 2610,
+   "status": {
+    "Oral": 144,
+    "Poster": 2275,
+    "Spotlight": 191
+   }
+  },
+  "icml_2026": {
+   "records": 418,
+   "accepted": 415,
+   "status": {
+    "Unknown": 414,
+    "Poster": 1,
+    "Withdraw": 3
+   }
+  },
+  "nips_2024": {
+   "records": 4238,
+   "accepted": 4037,
+   "status": {
+    "Oral": 61,
+    "Spotlight": 326,
+    "Poster": 3650,
+    "Reject": 201
+   }
+  },
+  "aaai_2026": {
+   "records": 49,
+   "accepted": 0,
+   "status": {
+    "Active": 49
+   }
+  },
+  "icml_2025": {
+   "records": 3939,
+   "accepted": 3768,
+   "status": {
+    "Unknown": 479,
+    "Oral": 109,
+    "Highlight": 3,
+    "Poster": 2967,
+    "Spotlight": 213,
+    "Reject": 166,
+    "Withdraw": 2
+   }
+  },
+  "corl_2025": {
+   "records": 263,
+   "accepted": 263,
+   "status": {
+    "Poster": 221,
+    "Oral": 42
+   }
+  },
+  "nips_2025": {
+   "records": 5898,
+   "accepted": 5639,
+   "status": {
+    "Oral": 78,
+    "Poster": 4529,
+    "Spotlight": 685,
+    "Reject": 258,
+    "Unknown": 347,
+    "Withdraw": 1
+   }
+  },
+  "cvpr_2025": {
+   "records": 3062,
+   "accepted": 2651,
+   "status": {
+    "Unknown": 167,
+    "Poster": 2484,
+    "Reject": 6,
+    "Withdraw": 1,
+    "Highlight": 388,
+    "Award Candidate": 15,
+    "": 1
+   }
+  },
+  "acl_2025": {
+   "records": 3203,
+   "accepted": 0,
+   "status": {
+    "Long": 1724,
+    "Short": 103,
+    "finding": 1376
+   }
+  },
+  "iclr_2026": {
+   "records": 19809,
+   "accepted": 5343,
+   "status": {
+    "Poster": 5120,
+    "Oral": 223,
+    "Desk Reject": 903,
+    "Reject": 8452,
+    "ICLR 2026 ConditionalPoster": 14,
+    "Withdraw": 5096,
+    "ICLR 2026 ConditionalOral": 1
+   }
+  },
+  "iclr_2024": {
+   "records": 7402,
+   "accepted": 2260,
+   "status": {
+    "Oral": 86,
+    "Spotlight": 367,
+    "Poster": 1807,
+    "Reject": 3437,
+    "Withdraw": 1653,
+    "Desk Reject": 52
+   }
+  },
+  "cvpr_2026": {
+   "records": 241,
+   "accepted": 237,
+   "status": {
+    "Unknown": 235,
+    "Poster": 2,
+    "Reject": 3,
+    "Withdraw": 1
+   }
+  },
+  "emnlp_2025": {
+   "records": 28,
+   "accepted": 0,
+   "status": {
+    "Active": 28
+   }
+  },
+  "iclr_2025": {
+   "records": 11669,
+   "accepted": 3703,
+   "status": {
+    "Oral": 213,
+    "Spotlight": 380,
+    "Reject": 4922,
+    "Poster": 3110,
+    "Withdraw": 2974,
+    "Desk Reject": 70
+   }
+  },
+  "acl_2024": {
+   "records": 1923,
+   "accepted": 0,
+   "status": {
+    "Findings": 948,
+    "Short": 76,
+    "Long": 861,
+    "System Demonstrations": 38
+   }
+  }
+ },
+ "hf_months": [
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09"
+ ],
+ "hf_monthly": {
+  "Agents": [
+   198,
+   104,
+   103,
+   169,
+   223,
+   193,
+   204,
+   310,
+   294,
+   189,
+   248,
+   233
+  ],
+  "Self-improve / RSI / harness": [
+   155,
+   98,
+   107,
+   108,
+   143,
+   162,
+   156,
+   224,
+   174,
+   128,
+   196,
+   179
+  ],
+  "RL post-training": [
+   178,
+   87,
+   114,
+   138,
+   172,
+   132,
+   119,
+   210,
+   141,
+   105,
+   108,
+   124
+  ],
+  "On-policy distillation": [
+   2,
+   2,
+   3,
+   8,
+   4,
+   12,
+   16,
+   38,
+   35,
+   36,
+   40,
+   40
+  ],
+  "Multimodal / VLM / video": [
+   245,
+   188,
+   225,
+   155,
+   186,
+   244,
+   188,
+   248,
+   232,
+   181,
+   179,
+   150
+  ],
+  "World models": [
+   25,
+   20,
+   26,
+   21,
+   35,
+   37,
+   28,
+   36,
+   56,
+   46,
+   40,
+   33
+  ],
+  "Long context / memory": [
+   41,
+   14,
+   32,
+   35,
+   39,
+   38,
+   31,
+   57,
+   45,
+   39,
+   29,
+   26
+  ],
+  "Efficiency (quant/KV/spec)": [
+   24,
+   14,
+   24,
+   20,
+   30,
+   23,
+   24,
+   47,
+   31,
+   17,
+   18,
+   34
+  ],
+  "Benchmarks / eval": [
+   490,
+   258,
+   304,
+   344,
+   397,
+   423,
+   407,
+   521,
+   462,
+   320,
+   403,
+   369
+  ],
+  "Safety / interpretability": [
+   154,
+   93,
+   116,
+   138,
+   146,
+   156,
+   146,
+   170,
+   159,
+   88,
+   111,
+   93
+  ],
+  "Diffusion / generative": [
+   134,
+   82,
+   146,
+   78,
+   95,
+   138,
+   91,
+   146,
+   119,
+   78,
+   68,
+   64
+  ],
+  "Embodied / robotics": [
+   63,
+   41,
+   55,
+   44,
+   62,
+   67,
+   43,
+   68,
+   96,
+   72,
+   57,
+   84
+  ]
+ },
+ "hf_keywords": {
+  "large language models": 912,
+  "reinforcement learning": 838,
+  "vision-language models": 300,
+  "multimodal large language models": 281,
+  "supervised fine-tuning": 269,
+  "diffusion models": 199,
+  "grpo": 174,
+  "llms": 159,
+  "chain-of-thought": 123,
+  "fine-tuning": 116,
+  "vision-language-action models": 108,
+  "large language model": 102,
+  "mixture-of-experts": 101,
+  "vision-language model": 99,
+  "video generation": 95,
+  "test-time scaling": 92,
+  "group relative policy optimization": 91,
+  "llm agents": 89,
+  "language models": 89,
+  "latent space": 88,
+  "reinforcement learning with verifiable rewards": 86,
+  "on-policy distillation": 86,
+  "world models": 83,
+  "retrieval-augmented generation": 81
+ },
+ "hf_total": 8511,
+ "hf_month_volume": {
+  "2025-10": 853,
+  "2025-11": 458,
+  "2025-12": 589,
+  "2026-01": 596,
+  "2026-02": 732,
+  "2026-03": 769,
+  "2026-04": 669,
+  "2026-05": 950,
+  "2026-06": 827,
+  "2026-07": 586,
+  "2026-08": 670,
+  "2026-09": 676
+ },
+ "arxiv_growth": {
+  "on-policy distillation": 1283.6,
+  "agent memory": 879.4,
+  "self-evolving agent": 822.7,
+  "recursive self-improvement": 795.0,
+  "diffusion language model": 390.9,
+  "agent benchmark": 377.7,
+  "context engineering": 372.1,
+  "vision-language-action": 358.2,
+  "computer use agent": 266.5,
+  "software engineering agent": 214.7,
+  "verifiable reward": 204.9,
+  "tool use": 194.2,
+  "automated research": 190.5,
+  "world model": 190.2,
+  "model context protocol": 164.9,
+  "LLM agent": 156.2,
+  "flow matching": 145.4,
+  "KV cache": 126.1,
+  "group relative policy optimization": 113.9,
+  "LLM serving": 101.1,
+  "AI for science": 83.0,
+  "web agent": 82.9,
+  "speculative decoding": 73.9,
+  "clinical NLP": 69.8,
+  "GUI agent": 64.5,
+  "mechanistic interpretability": 58.0,
+  "education LLM": 57.4,
+  "robot learning": 48.9,
+  "sparse autoencoder": 47.3,
+  "linear attention": 45.5,
+  "long context": 45.5,
+  "multi-agent": 45.4,
+  "mixture of experts": 41.1,
+  "red teaming": 38.4,
+  "expressivity transformer": 37.7,
+  "test-time scaling": 37.1,
+  "embodied AI": 36.2,
+  "exploration reinforcement learning": 33.8,
+  "LoRA": 33.5,
+  "mathematical reasoning": 30.4,
+  "video generation": 28.6,
+  "long video": 27.6,
+  "vision-language model": 27.3,
+  "data curation": 26.5,
+  "theorem proving": 26.0,
+  "hallucination": 23.9,
+  "alignment": 20.5,
+  "video understanding": 18.5,
+  "quantization": 15.6,
+  "code generation": 7.4,
+  "machine unlearning": 6.5,
+  "chain-of-thought": 3.1,
+  "watermarking": 2.7,
+  "generalization theory": 2.5,
+  "jailbreak": 2.3,
+  "process reward model": 1.0,
+  "catastrophic forgetting": 0.3,
+  "AI safety": -2.1,
+  "knowledge graph": -2.5,
+  "materials discovery": -4.9,
+  "large language model": -9.3,
+  "fairness": -9.6,
+  "continual learning": -9.6,
+  "imitation learning": -9.8,
+  "retrieval-augmented generation": -10.0,
+  "gaussian splatting": -11.1,
+  "multi-agent reinforcement learning": -12.8,
+  "personalization": -12.9,
+  "state space model": -13.2,
+  "time series forecasting": -14.0,
+  "text to speech": -14.2,
+  "offline reinforcement learning": -15.5,
+  "synthetic data": -15.7,
+  "causal inference": -15.9,
+  "3D generation": -16.0,
+  "tabular data": -16.5,
+  "point cloud": -16.6,
+  "speech recognition": -18.1,
+  "differential privacy": -18.1,
+  "weather forecasting": -18.6,
+  "evaluation benchmark": -18.7,
+  "efficient attention": -20.1,
+  "knowledge distillation": -21.0,
+  "music generation": -21.9,
+  "autonomous driving": -22.7,
+  "neural rendering": -24.6,
+  "graph neural network": -25.3,
+  "neuroscience": -26.6,
+  "direct preference optimization": -28.0,
+  "optimization algorithm": -28.3,
+  "medical imaging": -29.0,
+  "diffusion model": -29.7,
+  "in-context learning": -29.7,
+  "image generation": -31.0,
+  "recommender system": -31.0,
+  "drug discovery": -32.3,
+  "meta learning": -32.6,
+  "federated learning": -36.1,
+  "protein structure": -37.5,
+  "reinforcement learning from human feedback": -39.9
+ },
+ "arxiv_growth_note": "base={\"y1\": 130345, \"y0\": 102553}",
+ "extra_conf": {
+  "icml2024": {
+   "n": 2610,
+   "shares": {
+    "LLMs / foundation models": 16.8,
+    "Safety / alignment / privacy": 6.5,
+    "Efficiency / systems": 12.1,
+    "Interpretability": 3.7,
+    "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 7.5,
+    "Vision / multimodal": 10.0,
+    "Evaluation / benchmarks": 4.1,
+    "Graph / geometric learning": 6.9,
+    "Learning theory / optimization": 9.8,
+    "Retrieval / RAG / knowledge": 4.5,
+    "Diffusion / generative models": 6.7,
+    "Reasoning / test-time compute": 2.1,
+    "Applications to science": 2.1,
+    "Time series / dynamical systems": 2.3,
+    "Robotics / embodied": 2.5,
+    "Spatial / 3D / graphics": 1.6,
+    "World models / model-based RL": 1.8,
+    "Agents (tool use, computer use, multi-agent)": 2.8,
+    "Continual / transfer / meta learning": 2.3,
+    "Speech / audio / music": 1.0
+   }
+  },
+  "icml2025": {
+   "n": 3330,
+   "shares": {
+    "Diffusion / generative models": 8.8,
+    "Vision / multimodal": 12.3,
+    "Efficiency / systems": 13.1,
+    "Graph / geometric learning": 7.6,
+    "Learning theory / optimization": 9.8,
+    "LLMs / foundation models": 20.0,
+    "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 6.9,
+    "Evaluation / benchmarks": 6.1,
+    "Retrieval / RAG / knowledge": 5.6,
+    "Reasoning / test-time compute": 5.1,
+    "Agents (tool use, computer use, multi-agent)": 4.1,
+    "Interpretability": 4.2,
+    "Applications to science": 3.7,
+    "Safety / alignment / privacy": 8.4,
+    "Time series / dynamical systems": 2.5,
+    "Continual / transfer / meta learning": 2.3,
+    "Spatial / 3D / graphics": 1.9,
+    "Robotics / embodied": 2.8,
+    "World models / model-based RL": 2.0,
+    "Speech / audio / music": 0.9
+   }
+  },
+  "icml2026": {
+   "n": 6628,
+   "shares": {
+    "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 7.4,
+    "Reasoning / test-time compute": 9.1,
+    "Vision / multimodal": 16.1,
+    "Learning theory / optimization": 7.8,
+    "Agents (tool use, computer use, multi-agent)": 7.8,
+    "Graph / geometric learning": 6.9,
+    "Diffusion / generative models": 8.6,
+    "Interpretability": 3.4,
+    "LLMs / foundation models": 21.6,
+    "Speech / audio / music": 1.1,
+    "Robotics / embodied": 3.9,
+    "Efficiency / systems": 13.7,
+    "Continual / transfer / meta learning": 1.7,
+    "Evaluation / benchmarks": 7.5,
+    "Safety / alignment / privacy": 7.8,
+    "Applications to science": 3.2,
+    "Retrieval / RAG / knowledge": 4.8,
+    "Spatial / 3D / graphics": 3.3,
+    "World models / model-based RL": 2.4,
+    "Time series / dynamical systems": 2.4
+   }
+  },
+  "cvpr2025": {
+   "n": 2330,
+   "shares": {
+    "Vision / multimodal": 59.7,
+    "Safety / alignment / privacy": 5.6,
+    "LLMs / foundation models": 12.7,
+    "Robotics / embodied": 5.9,
+    "Diffusion / generative models": 13.9,
+    "Spatial / 3D / graphics": 17.7,
+    "Graph / geometric learning": 3.9,
+    "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 0.6,
+    "Learning theory / optimization": 1.8,
+    "Agents (tool use, computer use, multi-agent)": 2.1,
+    "Interpretability": 3.4,
+    "Efficiency / systems": 10.7,
+    "Retrieval / RAG / knowledge": 3.5,
+    "World models / model-based RL": 1.2,
+    "Evaluation / benchmarks": 7.3,
+    "Reasoning / test-time compute": 2.7,
+    "Speech / audio / music": 1.8,
+    "Continual / transfer / meta learning": 2.2,
+    "Applications to science": 2.3,
+    "Time series / dynamical systems": 1.1
+   }
+  },
+  "cvpr2026": {
+   "n": 4042,
+   "shares": {
+    "Vision / multimodal": 58.6,
+    "Spatial / 3D / graphics": 15.8,
+    "Learning theory / optimization": 3.2,
+    "Evaluation / benchmarks": 8.5,
+    "Graph / geometric learning": 4.9,
+    "Efficiency / systems": 11.4,
+    "LLMs / foundation models": 13.4,
+    "Reinforcement learning (RL/RLVR/GRPO/RLHF)": 3.2,
+    "Agents (tool use, computer use, multi-agent)": 4.4,
+    "Reasoning / test-time compute": 7.5,
+    "Robotics / embodied": 7.2,
+    "Diffusion / generative models": 10.9,
+    "World models / model-based RL": 2.3,
+    "Continual / transfer / meta learning": 2.1,
+    "Applications to science": 3.2,
+    "Retrieval / RAG / knowledge": 3.6,
+    "Interpretability": 2.9,
+    "Safety / alignment / privacy": 6.3,
+    "Speech / audio / music": 1.3,
+    "Time series / dynamical systems": 0.5
+   }
+  }
+ }
+}
