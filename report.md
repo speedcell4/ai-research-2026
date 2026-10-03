@@ -68,6 +68,7 @@
 | 🔥🔥 | 基础模型与预训练 | 规模仍在，但"效率 / 配方"取代了"更大" | 3.1 |
 | 🔥 | 非 LLM ML | 不在聚光灯下，唯一真热点是表格基础模型 | 3.21 |
 | — | 补遗：神经/BCI、量子、kernel/GP/bandit、教育/医疗/社会模拟、MCP 工具投毒、模型编辑与合并、3D/图形 | 主线之外、但稳定产出且容易漏 | 3.24 |
+| — | 补遗（二）：数据系统 / data agent / text-to-SQL、可信 ML、金融/法律/经济/能源/地理空间/农业/游戏 | 论文不少但不在主线，瓶颈在标签与评测 | 3.25 |
 
 ## 怎么读这份报告
 
@@ -486,6 +487,38 @@
 - **语音 / 音频理解**（3.11 讲生成，这里补理解与全双工）：Mega-ASR（[2605.19833](https://arxiv.org/abs/2605.19833)）、Realtime-Venus（[2609.13814](https://arxiv.org/abs/2609.13814)）、OmniVChat（[2609.21465](https://arxiv.org/abs/2609.21465)）、AudioSAE（[2606.03086](https://arxiv.org/abs/2606.03086)）。
 - **3D / 图形 / 渲染**：ICLR 2026 标题含 "3D" 的接收论文 **135 篇**，CVPR 2026 的 3D/4D/GS 桶 **748 篇**——**规模巨大但范式趋稳**。代表：Utonia（[2603.03283](https://arxiv.org/abs/2603.03283)）、ABot-Earth 0.5（[2606.09967](https://arxiv.org/abs/2606.09967)）、3DROID（[2610.01744](https://arxiv.org/abs/2610.01744)）、Dyna3（[2610.01286](https://arxiv.org/abs/2610.01286)）、BayesianGS-SLAM（[2609.24140](https://arxiv.org/abs/2609.24140)）。**判断：Gaussian splatting 从"范式"变成"工程与数据"，真正的创新迁移到了生成式 3D 与动态 4D。**
 
+### 3.25 补遗（二）：应用域、数据系统与可信 ML
+
+> **一句话**：这些板块论文不少、却不在主线叙事里；共同点是——**瓶颈几乎都在标签、评测与落地，而不是模型**。
+
+**A. 数据系统 + LLM（data agent / text-to-SQL）**：应用域里增长最快的一块，但 2026 的结论是"没有想象中好用"。
+
+- **BIRD-INTERACT**（[2510.05318](https://arxiv.org/abs/2510.05318)，ICLR 2026 Oral）把 text-to-SQL 评测从单轮静态改成**有状态、多轮交互**，结果 frontier 模型只能拿到 **20.9–25.5%** 的 reward、端到端解决率 **≤16–17%**——**榜单高分有一半来自评测协议本身**。
+- **Pervasive Annotation Errors Break Text-to-SQL Benchmarks and Leaderboards**（[2601.08778](https://arxiv.org/abs/2601.08778)，VLDB 2026）证明**答案键错误会改变排行榜名次**。
+- 真正的工程进展在 data agent 与解析：**DataMind**（[2509.25084](https://arxiv.org/abs/2509.25084)，ICLR 2026，开放 7B/14B 数据 analytic agent）、**EvoOntology**（[2609.15779](https://arxiv.org/abs/2609.15779)，自演化 ontology 层）、**Spider 2.0-AIFunc**（[2607.06229](https://arxiv.org/abs/2607.06229)）、企业级评测 **AvalancheBench**（[2605.24183](https://arxiv.org/abs/2605.24183)）与 **Argo-Bench**（[2610.02122](https://arxiv.org/abs/2610.02122)）。
+- **信任被点名**：**When Tools Silently Lie**（[2609.37153](https://arxiv.org/abs/2609.37153)）说 data agent 会盲从"沉默说谎"的工具；**Towards Reliable AI Data Scientists**（[2609.35255](https://arxiv.org/abs/2609.35255)）用 **workflow harness** 约束可靠性——与 3.5 的 harness 主线呼应。
+- **文档智能 / OCR** 是最落地的分支：**MinerU2.5 / 2.5-Pro**（[2509.22186](https://arxiv.org/abs/2509.22186) / [2604.04771](https://arxiv.org/abs/2604.04771)）、**Qianfan-OCR**（[2603.13398](https://arxiv.org/abs/2603.13398)）、**PaddleOCR-VL**（[2510.14528](https://arxiv.org/abs/2510.14528)）、**MM-OPD**（[2609.32690](https://arxiv.org/abs/2609.32690)）、**Amnesia by Design, Memory By Necessity**（[2609.32041](https://arxiv.org/abs/2609.32041)，文档智能的持久状态）。
+- **泼冷水**：autonomous data scientist 在 12 个月里冒出至少三套 L0–L5 分类学，其中一篇标题直接叫 "…Overstated Hype?"。
+
+**B. 可信 ML（鲁棒 / 分布偏移 / 不确定性）**：从"新方法"转向"更严格的不确定性保证"。
+
+- **High-Dimensional Calibration from Swap Regret**（[2505.21460](https://arxiv.org/abs/2505.21460)，NeurIPS 2025）把高维校准与在线线性优化联系起来；**Elements of Conformal Prediction**（[2603.23923](https://arxiv.org/abs/2603.23923)，Annual Review of Statistics）成为该方向的标准综述。
+- **对 LLM 不确定性的重击**：ICML 2026 Position **UQ in LLMs is Just Unsupervised Clustering**（[2605.19220](https://arxiv.org/abs/2605.19220)）指出多数 LLM 置信度只反映**内部一致性而非正确性**，对"自信的幻觉"完全失明；**Certified Against Which Oracle?**（[2609.25938](https://arxiv.org/abs/2609.25938)）发现 text-to-SQL 的 conformal 拒答认证在**换一个 oracle 后高估风险 2.7–10.2 个点**。
+- 其它：**Reframing Long-Tailed Learning via Loss Landscape Geometry**（[2603.21217](https://arxiv.org/abs/2603.21217)，CVPR 2026）、**Hybrid Randomized Smoothing**（[2605.12876](https://arxiv.org/abs/2605.12876)，ICML 2026）、**Symmetrization of Loss Functions under Noisy Labels**（[2605.20347](https://arxiv.org/abs/2605.20347)）、OOD 的 EBM+AE 协同（[2609.13917](https://arxiv.org/abs/2609.13917)）、长尾的 **FedLTLib**（[2609.15625](https://arxiv.org/abs/2609.15625)）。
+- **判断**：可信 ML 的**热度被 LLM 安全吸走**（见 3.18/3.24），但方法论在变严——**"认证"开始被要求说明"对哪个 oracle 认证"**。
+
+**C. 应用域（金融 / 法律 / 经济 / 能源 / 网络 / 地理空间 / 农业 / 游戏）**
+
+- **金融**：**Self-Evolving Multi-Agent Symbolic Discovery**（[2609.32746](https://arxiv.org/abs/2609.32746)）、**When Financial Fine-tuning Fails**（[2609.04806](https://arxiv.org/abs/2609.04806)，领域微调后的数值幻觉三层检测）、**QuantCode**（[2609.39420](https://arxiv.org/abs/2609.39420)，可执行算法交易代码）、**UQ-LOB**（[2609.31491](https://arxiv.org/abs/2609.31491)，限价订单簿不确定性预测）。**数值幻觉 + 可执行性是两个真问题。**
+- **法律**：ICLR 2026 有 **LEXam**（340 场法学考试）与 **Can LLMs Reason Soundly in Law?**（审计推理模式）；**LexReward**（[2609.39071](https://arxiv.org/abs/2609.39071)）用 taxonomy 驱动奖励；**COLIEE 2026**（[2609.26237](https://arxiv.org/abs/2609.26237)）做案例检索；**NyayaAI**（[2605.10155](https://arxiv.org/abs/2605.10155)）是多智能体法律助手。**瓶颈是"推理是否 sound"，不是"答案是否像"。**
+- **经济 / 市场 / 博弈**：ICLR 2026 有 **GDPval**（经济价值任务）、**Cost-of-Pass**（用经济成本评测模型）、**Market Games for Generative Models**、**Bandit Learning in Matching Markets Robust to Adversarial Corruptions**、**Learning to Play Multi-Follower Bayesian Stackelberg Games**。注：**LLM 作为经济主体（silicon sampling）在 3.24 已被证明不能替代个体测量。**
+- **能源 / 网络 / 6G**：**Distributed JEPA**（[2609.17029](https://arxiv.org/abs/2609.17029)，能源预测自监督）、**Skill-Based AI Agents for Power-System Studies**（[2609.40272](https://arxiv.org/abs/2609.40272)，MCP + 技能）、**Toward Composable Network Digital Twins**（[2609.18704](https://arxiv.org/abs/2609.18704)）、**Energy-Driven Evaluation of Network Digital Twinning**（[2609.35644](https://arxiv.org/abs/2609.35644)）。
+- **地理空间 / 遥感 / 农业**：ICLR 2026 有 **MoRA**（移动性作为地理表征骨架）与 **GeoSpatial Chain-of-Thought**；**AlignJEPA**（[2608.15456](https://arxiv.org/abs/2608.15456)）、**From Wildfire Severity to Snow Persistence**（[2609.36345](https://arxiv.org/abs/2609.36345)）、**Decoding the Disaster**（[2610.00302](https://arxiv.org/abs/2610.00302)）、**AgroBench**（[2609.26809](https://arxiv.org/abs/2609.26809)），以及 3.10 的 Utonia / ABot-Earth 0.5 / UrbanGround。
+- **游戏 / 程序化内容**：**Lumine**（3D 开放世界通用 agent，HF 218 票）、**Procedural Content Metageneration**（[2608.17947](https://arxiv.org/abs/2608.17947)）、**Player Perceptions of Generative AI in Games**（[2608.11539](https://arxiv.org/abs/2608.11539)）。
+- **心理健康 / 临床决策支持**：**Counterfactual Auditing of Bias in Clinical Triage**（[2610.01963](https://arxiv.org/abs/2610.01963)）、**Evidence-Bounded Mental Health Reasoning**（[2608.31014](https://arxiv.org/abs/2608.31014)）。**与 3.20 的 LungIMPACT 阴性 RCT 一起看：临床 AI 的证据链仍然很薄。**
+
+> **跨领域结论**：在数据系统与可信 ML 这两个文献里，**瓶颈几乎都是标签 / oracle / benchmark，而不是模型**——这与 3.19 的"评估危机"是同一件事。
+
 ---
 
 ## 4. 重点论文总表（跨全部板块）
@@ -681,7 +714,7 @@
 | ICML 2026 只有 418 条 | 用**官方 6,628 个标题**补全，得到 ICML 2024→2025→2026 三点趋势（Reasoning 2.1%→5.1%→9.1%） |
 | CVPR 2026 只有 241 条 | 用 **CVPR Open Access 的 4,042 个标题**补全（对照 2025 年的 2,330 个） |
 | HF 8–9 月覆盖偏薄（子代理称归档在 2026-07-20 中断） | 我自己的全量抓取**确实覆盖了 8–9 月**（8 月 670 篇、9 月 676 篇），全年 366 天 / 8,511 篇 |
-| 只覆盖三条线 | 新增 **3.24 补遗**：神经/BCI、量子 ML、kernel/GP/bandit、教育/医疗/社会模拟、agent 安全、模型编辑与合并、检索推荐、语音理解、3D/图形 |
+| 只覆盖三条线 | 新增 **3.24 / 3.25 补遗**：神经/BCI、量子 ML、kernel/GP/bandit、教育/医疗/社会模拟、agent 安全与 MCP 工具投毒、模型编辑与合并、检索推荐、语音理解、3D/图形；以及数据系统（text-to-SQL / data agent）、可信 ML（校准 / conformal / OOD / 长尾）、金融 / 法律 / 经济 / 能源 / 地理空间 / 农业 / 游戏等应用域 |
 
 **剩下的真实局限（不掩饰）：**
 
