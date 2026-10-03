@@ -509,15 +509,23 @@
 
 **C. 应用域（金融 / 法律 / 经济 / 能源 / 网络 / 地理空间 / 农业 / 游戏）**
 
-- **金融**：**Self-Evolving Multi-Agent Symbolic Discovery**（[2609.32746](https://arxiv.org/abs/2609.32746)）、**When Financial Fine-tuning Fails**（[2609.04806](https://arxiv.org/abs/2609.04806)，领域微调后的数值幻觉三层检测）、**QuantCode**（[2609.39420](https://arxiv.org/abs/2609.39420)，可执行算法交易代码）、**UQ-LOB**（[2609.31491](https://arxiv.org/abs/2609.31491)，限价订单簿不确定性预测）。**数值幻觉 + 可执行性是两个真问题。**
-- **法律**：ICLR 2026 有 **LEXam**（340 场法学考试）与 **Can LLMs Reason Soundly in Law?**（审计推理模式）；**LexReward**（[2609.39071](https://arxiv.org/abs/2609.39071)）用 taxonomy 驱动奖励；**COLIEE 2026**（[2609.26237](https://arxiv.org/abs/2609.26237)）做案例检索；**NyayaAI**（[2605.10155](https://arxiv.org/abs/2605.10155)）是多智能体法律助手。**瓶颈是"推理是否 sound"，不是"答案是否像"。**
-- **经济 / 市场 / 博弈**：ICLR 2026 有 **GDPval**（经济价值任务）、**Cost-of-Pass**（用经济成本评测模型）、**Market Games for Generative Models**、**Bandit Learning in Matching Markets Robust to Adversarial Corruptions**、**Learning to Play Multi-Follower Bayesian Stackelberg Games**。注：**LLM 作为经济主体（silicon sampling）在 3.24 已被证明不能替代个体测量。**
-- **能源 / 网络 / 6G**：**Distributed JEPA**（[2609.17029](https://arxiv.org/abs/2609.17029)，能源预测自监督）、**Skill-Based AI Agents for Power-System Studies**（[2609.40272](https://arxiv.org/abs/2609.40272)，MCP + 技能）、**Toward Composable Network Digital Twins**（[2609.18704](https://arxiv.org/abs/2609.18704)）、**Energy-Driven Evaluation of Network Digital Twinning**（[2609.35644](https://arxiv.org/abs/2609.35644)）。
-- **地理空间 / 遥感 / 农业**：ICLR 2026 有 **MoRA**（移动性作为地理表征骨架）与 **GeoSpatial Chain-of-Thought**；**AlignJEPA**（[2608.15456](https://arxiv.org/abs/2608.15456)）、**From Wildfire Severity to Snow Persistence**（[2609.36345](https://arxiv.org/abs/2609.36345)）、**Decoding the Disaster**（[2610.00302](https://arxiv.org/abs/2610.00302)）、**AgroBench**（[2609.26809](https://arxiv.org/abs/2609.26809)），以及 3.10 的 Utonia / ABot-Earth 0.5 / UrbanGround。
-- **游戏 / 程序化内容**：**Lumine**（3D 开放世界通用 agent，HF 218 票）、**Procedural Content Metageneration**（[2608.17947](https://arxiv.org/abs/2608.17947)）、**Player Perceptions of Generative AI in Games**（[2608.11539](https://arxiv.org/abs/2608.11539)）。
+> **跨域共性**：真实进展几乎都是**"有仪器的领域环境 + 防泄漏/可执行性感知的评测"**，而不是能力本身。**MCP 式工具调用成了通用底座**（Earth-Agent 104 个工具、Orak 12 款游戏、6GAgentGym 42 个工具）。
+
+- **金融：这一年的结论是"不要相信 LLM 交易的 alpha"。**
+  - **TraderBench**（[2603.00285](https://arxiv.org/abs/2603.00285)）：12 个模型里 **7 个在四种递进的市场操纵变换下都稳定在约 32–34 分**——不是鲁棒，而是"几乎不交易"；**概念-计算差约 54 分**（P&L 准确率 80–93 vs Greeks 18–53），**给期权定价工具也补不上**。
+  - **The Alpha Illusion**（[2605.16895](https://arxiv.org/abs/2605.16895)）：一旦评测窗口越过预训练截止期，FinMem 收益 **-71.85%**、QuantAgent 夏普 **-51.48%**；多智能体辩论在 36 个配置里胜率 <20%。
+  - **Agentic Trading** 审计（[2605.19337](https://arxiv.org/abs/2605.19337)）：77 篇 LLM 交易研究中，可信子集 19 篇里**只有 2 篇给出可提取的时间一致划分**——**"协议不可比"本身就是主要发现**。
+  - 侧线：**When Financial Fine-tuning Fails**（[2609.04806](https://arxiv.org/abs/2609.04806)，数值幻觉）、**QuantCode**（[2609.39420](https://arxiv.org/abs/2609.39420)，可执行交易代码）、**UQ-LOB**（[2609.31491](https://arxiv.org/abs/2609.31491)）。
+- **经济 / 市场：LLM 作为经济主体不合格。** **Competitive Market Behavior of LLMs**（[2609.02580](https://arxiv.org/abs/2609.02580)）复现 Smith 双向拍卖：**没有任何条件达到完全竞争均衡**，价格离散度约为人类基准的 **3 倍**，最好效率 0.91；**Agent Bazaar**（[2605.17698](https://arxiv.org/abs/2605.17698)）发现**低于成本的恶性降价与 Sybil 欺骗**，人工护栏很脆，只有定向 RL 训出的 9B 模型表现"经济对齐"。
+- **法律：从"律师资格考试"转向多轮咨询、rubric 与弃答，但仍不可靠。** **DeonticBench**（[2604.04443](https://arxiv.org/abs/2604.04443)）用 6,232 道规则题，**最难子集最好只有 44.4%**（SARA Numeric）/ 46.6 macro-F1，且** RL 并没有解决 Prolog 式符号规则推理**；**PLawBench**（[2601.16669](https://arxiv.org/abs/2601.16669)）发现**有序多步约束下普遍掉 6–8%**；配套还有 **DLawBench**（[2606.13931](https://arxiv.org/abs/2606.13931)）与 **CLAUSE**（[2511.00340](https://arxiv.org/abs/2511.00340)，EACL 2026）。
+- **能源 / 电力：论文少但验证扎实。** **CONDUCTOR**（[2606.24609](https://arxiv.org/abs/2606.24609)）在**真实 Bornholm 60kV 电网 + 一年智能电表数据**上让 LLM 编排潮流分析与优化求解器，**67/68 提示（98.5%）一次成功**，主要失败模式是"过度行动 / 拒绝校准"；**RestoreBench**（[2609.00384](https://arxiv.org/abs/2609.00384)）做潮流收敛修复，发现**多智能体显著增加成本却不系统性提升性能**。
+- **网络 / 6G：** **6GAgentGym**（[2603.29656](https://arxiv.org/abs/2603.29656)）建了 **42 个工具的闭环网络管理 gym**（含 NS-3 校准的实验模型），SFT + 在线 RL 让 **8B 开源模型追平 GPT-5** 的整体成功率。
+- **地理空间 / 遥感：** **Earth-Agent**（[2509.23141](https://arxiv.org/abs/2509.23141)，ICLR 2026）把 **104 个专家工具**接进 MCP 生态，配套 Earth-Bench（248 任务 / 13,729 图像，**同时评结果与轨迹**）；**CrossEarth-SAR**（[2603.12008](https://arxiv.org/abs/2603.12008)）是十亿级 SAR 基础模型（HH→full-pol **+15.5% mIoU**）；**NAVI-Orbital**（[2606.18271](https://arxiv.org/abs/2606.18271)）做了**首个在轨 VLM**（单星演示）。
+- **农业 / EO 是这一块最该泼冷水的**：**Foundation Models Meet Agriculture**（[2608.30392](https://arxiv.org/abs/2608.30392)）发现 **EO 基础模型输给一个表格基础模型**，并在模态不匹配时退化；SIGSPATIAL 的一项工作（[2606.29664](https://arxiv.org/abs/2606.29664)）显示 Prithvi / SpectralGPT / SatMAE **换个美国区域就崩**。
+- **游戏：目前最健康的 agent 测试床之一。** **Orak**（[2506.03610](https://arxiv.org/abs/2506.03610)，ICLR 2026）用 **12 款商业游戏 + MCP 即插即用 + Elo 竞技场**，微调 LLaMA-3.2-3B 能迁移到未见游戏和 WebShop（0→8.4% / 12.6%）；**实时延迟杀死了多数模型**。
 - **心理健康 / 临床决策支持**：**Counterfactual Auditing of Bias in Clinical Triage**（[2610.01963](https://arxiv.org/abs/2610.01963)）、**Evidence-Bounded Mental Health Reasoning**（[2608.31014](https://arxiv.org/abs/2608.31014)）。**与 3.20 的 LungIMPACT 阴性 RCT 一起看：临床 AI 的证据链仍然很薄。**
 
-> **跨领域结论**：在数据系统与可信 ML 这两个文献里，**瓶颈几乎都是标签 / oracle / benchmark，而不是模型**——这与 3.19 的"评估危机"是同一件事。
+> **跨领域结论**：数据系统、可信 ML 与领域应用**这三个文献的瓶颈是同一个——标签 / oracle / benchmark，而不是模型**；这与 3.19 的"评估危机"是同一件事。值得单独记住的一句是：**这一年在金融、经济、农业/EO 三个"钱和声望最多"的方向上，最重要的论文都是"打假"论文。**
 
 ---
 
